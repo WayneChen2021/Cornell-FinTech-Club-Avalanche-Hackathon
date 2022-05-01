@@ -252,6 +252,14 @@ class Transaction():
             global validators
             validators.pop(self.validator)
 
+            global node_dict_copies
+            node_dict_copies.pop(self.validator)
+
+            global delegated_stake_copies
+            delegated_stake_copies.pop(self.validator)
+            for dict in delegated_stake_copies.values():
+                dict.pop(self.validator)
+
 class Validator():
     def __init__(self):
         self.acks = []
