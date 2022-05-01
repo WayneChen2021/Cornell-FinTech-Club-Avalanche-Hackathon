@@ -10,3 +10,7 @@ Options/features:
 -Nodes verified in the network will be colored purple
 
 -Drag around nodes in the GUI
+
+Borrowed code:
+
+There is some; links to code are comments in abc.py file
